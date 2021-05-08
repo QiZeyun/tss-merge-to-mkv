@@ -17,3 +17,8 @@ jobs:
       with:
         name: packs # 上传后的名字
         path: packs # 将 packs 目录进行上传
+    - name: Release file
+      uses: actions/upload-release-asset@v1.0.1
+      with:
+        asset_path: packs
+        asset_name: packs
